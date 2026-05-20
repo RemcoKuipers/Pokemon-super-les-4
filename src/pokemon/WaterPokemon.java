@@ -26,11 +26,11 @@ public class WaterPokemon extends Pokemon {
         this.waterResistance = waterResistance;
     }
 
-    public void hydroPump(){
+    public void hydroPump() {
         System.out.println(getName() + " uses Hydro Pump.");
     }
 
-    public void rainDance(){
+    public void rainDance() {
         System.out.println(getName() + " uses Rain Dance.");
     }
 

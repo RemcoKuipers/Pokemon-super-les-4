@@ -2,12 +2,12 @@ package pokemon;
 
 public class ElectricPokemon extends Pokemon {
     private int electricCharge;
-    private int electroResistance;
+    private int electricResistance;
 
     public ElectricPokemon(String name, int level, int hp, int maxHp, String sound, int electricCharge, int electroResistance) {
         super(name, level, hp, maxHp, sound);
         this.electricCharge = electricCharge;
-        this.electroResistance = electroResistance;
+        this.electricResistance = electroResistance;
 
     }
 
@@ -20,18 +20,18 @@ public class ElectricPokemon extends Pokemon {
     }
 
     public int getElectroResistance() {
-        return electroResistance;
+        return electricResistance;
     }
 
     public void setElectroResistance(int electroResistance) {
-        this.electroResistance = electroResistance;
+        this.electricResistance = electroResistance;
     }
 
-    public void voltTackle(){
+    public void voltTackle() {
         System.out.println(getName() + " uses Volt Tackle");
     }
 
-    public void electroBall(){
+    public void electroBall() {
         System.out.println(getName() + " uses Electro Ball");
     }
 
