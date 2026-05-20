@@ -1,21 +1,21 @@
 package pokemon;
 
 public class FirePokemon extends Pokemon {
-    private String weakness;
+    private int firePower;
     private int fireResistance;
 
-    public FirePokemon(String name, int level, int hp, int maxHp, String sound, String weakness, int fireResistance) {
+    public FirePokemon(String name, int level, int hp, int maxHp, String sound, int firePower, int fireResistance) {
         super(name, level, hp, maxHp, sound);
-        this.weakness = weakness;
+        this.firePower = firePower;
         this.fireResistance = fireResistance;
     }
 
-    public String getWeakness() {
-        return weakness;
+    public int getFirePower() {
+        return firePower;
     }
 
-    public void setWeakness(String weakness) {
-        this.weakness = weakness;
+    public void setFirePower(int firePower) {
+        this.firePower = firePower;
     }
 
     public int getFireResistance() {
@@ -27,15 +27,15 @@ public class FirePokemon extends Pokemon {
     }
 
     public void fireLash() {
-        System.out.println("Fire Lash");
+        System.out.println(getName() + "used Fire Lash");
     }
 
     public void flameThrower() {
-        System.out.println("Flame Thrower");
+        System.out.println(getName() + " used Flame Thrower.");
     }
 
     @Override
     public void speaks() {
-        System.out.println(getSound());
+        System.out.println(getName() + " Says " + getSound());
     }
 }

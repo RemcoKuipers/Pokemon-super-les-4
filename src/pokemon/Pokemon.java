@@ -58,8 +58,8 @@ public abstract class Pokemon {
 
     public void eat() {
         if (this.hp < this.maxHp) {
-            this.hp += 1;
-            System.out.println("You eat + 1 HP! Current HP: " + this.hp);
+            this.hp += 10;
+            System.out.println("You ate a berry you get  + 10 HP! Current HP: " + this.hp);
         } else {
             System.out.println("Your HP is full (100%)");
         }
