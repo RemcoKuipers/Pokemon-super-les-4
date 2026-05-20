@@ -5,6 +5,15 @@ public abstract class Pokemon {
     private int level;
     private int hp;
     private int maxHp;
+    private String sound;
+
+    public String getSound() {
+        return sound;
+    }
+
+    public void setSound(String sound) {
+        this.sound = sound;
+    }
 
     public String getName() {
         return name;
@@ -38,11 +47,12 @@ public abstract class Pokemon {
         this.maxHp = maxHp;
     }
 
-    public Pokemon(String name, int level, int hp, int maxHp) {
+    public Pokemon(String name, int level, int hp, int maxHp, String sound) {
         this.name = name;
         this.level = level;
         this.hp = hp;
         this.maxHp = maxHp;
+        this.sound = sound;
 
     }
 
