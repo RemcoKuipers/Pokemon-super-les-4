@@ -27,7 +27,7 @@ public class FirePokemon extends Pokemon {
     }
 
     public void fireLash() {
-        System.out.println(getName() + "used Fire Lash");
+        System.out.println(getName() + " used Fire Lash");
     }
 
     public void flameThrower() {
